@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f9f4; /* Fondo pastel verde */
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s; /* Efecto de desvanecimiento al cargar */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Mueve el título hacia arriba */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Regresa a su posición */
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4caf50; /* Verde pastel */
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    animation: titleEffect 1s; /* Efecto de movimiento al cargar */
+}
+
+@keyframes titleEffect {
+    0% {
+        transform: translateY(-10px); /* Mueve el título hacia arriba */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#contador {
+    font-size: 3em;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid #4caf50; /* Borde verde */
+    border-radius: 10px;
+    background-color: #e8f5e9; /* Fondo del contador */
+    transition: transform 0.3s ease;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #81c784; /* Botón verde pastel */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #66bb6a; /* Botón verde más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra en los botones */
+}
+
+button:active {
+    transform: scale(0.95); /* Efecto de disminución al presionar el botón */
+}
