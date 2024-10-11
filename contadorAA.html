@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        #contador {
+            font-size: 2em;
+            margin: 20px;
+        }
+        button {
+            font-size: 1em;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contador">0</div>
+    <button onclick="subirparriba()">SubirPaArriba</button>
+    <button onclick="bajarparaabajdo()">BajarPaAbajdo</button>
+
+    <script>
+        let contador = 0;
+
+        function subirparriba() {
+            contador = contador + 1;
+            document.getElementById("contador").innerHTML = contador;
+        }
+
+        function bajarparaabajdo() {
+            contador--;
+            document.getElementById("contador").innerHTML = contador;
+        }
+    </script>
+</body>
+</html>
