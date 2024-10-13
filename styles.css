@@ -74,3 +74,14 @@ button:hover {
 button:active {
     transform: scale(0.95); /* Efecto de disminución al presionar el botón */
 }
+@media screen and (max-width: 1024px) {
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(100% - 40px);
+    }
+}
